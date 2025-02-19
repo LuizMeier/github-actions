@@ -74,3 +74,6 @@ docs/_build/doctrees
 docs/_build/html
 docs/_build/latex
 docs/_build/latex/target
+
+# Ignore src/__pycache__ directory
+src/__pycache__/
