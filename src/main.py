@@ -13,11 +13,21 @@ def main():
 
     # Process the fetched data
     filtered_data = data_processor.filter_data(raw_data)
+
     transformed_data = data_processor.transform_data(filtered_data)
 
-    # Print the results
-    print(json.dumps(transformed_data, indent=2))
+    # Getting which is the biggest dog
+    max = 0
+    for breed in filtered_data:
+        if breed['attributes']['male_weight']['max'] > max:
+            max = breed['attributes']['male_weight']['max']
+            name = breed['attributes']['name']
 
+    # Print the results
+    #print(json.dumps(transformed_data, indent=2))
+
+    # Print the biggest dog
+    print(f"{name} is the biggest dog. It weights {max} kg")
 
 if __name__ == "__main__":
     main()
