@@ -1,4 +1,5 @@
 import json
+import sys
 from api_client import APIClient
 from data_processor import DataProcessor
 
@@ -26,8 +27,9 @@ def main():
     # Print the results
     print(json.dumps(transformed_data, indent=2))
 
-    # Print the biggest dog
-    print(f"You woud say: {name} is the biggest dog. It weights {max} kg")
+    # Print the biggest dog, if asked
+    if sys.argv[1] == "you":
+        print(f"\n{name} is the biggest dog. It weights {max} kg.")
 
 
 if __name__ == "__main__":

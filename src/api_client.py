@@ -6,7 +6,7 @@ class APIClient:
         self.base_url = base_url
 
     def fetch_data(self, endpoint):
-        response = requests.get(f"{self.base_url}/{endpoint}")
+        response = requests.get(f"{self.base_url}/{endpoint}", verify=False)
         return self.get_response(response)
 
     def get_response(self, response):
