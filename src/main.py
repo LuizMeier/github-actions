@@ -2,6 +2,7 @@ import json
 from api_client import APIClient
 from data_processor import DataProcessor
 
+
 def main():
     base_url = "https://dogapi.dog/api/v2"  # Define the base URL for the Dog API
     api_client = APIClient(base_url)  # Pass the base URL to the APIClient
@@ -16,6 +17,7 @@ def main():
 
     # Print the results
     print(json.dumps(transformed_data, indent=2))
+
 
 if __name__ == "__main__":
     main()

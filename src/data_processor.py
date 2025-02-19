@@ -6,4 +6,3 @@ class DataProcessor:
     def transform_data(self, data):
         # Example transformation: extract only the breed name and male weight
         return [{'Breed': breed['attributes']['name'], 'Male Weight': f"{breed['attributes']['male_weight']['min']} - {breed['attributes']['male_weight']['max']} kg"} for breed in data]
-    
