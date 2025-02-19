@@ -1,2 +1,2 @@
-# gh-actions
+# github-actions
 Testing Github Actions
