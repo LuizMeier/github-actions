@@ -1,5 +1,4 @@
 import json
-import sys
 from api_client import APIClient
 from data_processor import DataProcessor
 
