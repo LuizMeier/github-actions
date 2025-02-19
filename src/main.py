@@ -24,10 +24,11 @@ def main():
             name = breed['attributes']['name']
 
     # Print the results
-    #print(json.dumps(transformed_data, indent=2))
+    print(json.dumps(transformed_data, indent=2))
 
     # Print the biggest dog
-    print(f"{name} is the biggest dog. It weights {max} kg")
+    print(f"You woud say: {name} is the biggest dog. It weights {max} kg")
+
 
 if __name__ == "__main__":
     main()
