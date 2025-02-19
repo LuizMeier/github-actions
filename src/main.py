@@ -27,7 +27,7 @@ def main():
     print(json.dumps(transformed_data, indent=2))
 
     # Print the biggest dog, if asked
-    print(f"\n{name} is the biggest dog. It weights {max} kg.")
+    print(f"\n\n{name} is the biggest dog. It weights {max} kg.")
 
 
 if __name__ == "__main__":
